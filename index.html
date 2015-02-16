@@ -3,8 +3,10 @@
 <head>
 <!--
 
+  ---------------------
   UNTITLED BY PIXEL LAB
   VERSION 1.1
+  ---------------------
 
   HTTP://WWW.PIXELLAB.CO/THEME/ISSUE
 
@@ -45,6 +47,7 @@
 <meta name="if:Uppercase titles" content="1" />
 <meta name="if:Group additional pages together" content="1" />
 <meta name="if:Enable Infinite Scroll" content="1" />
+<meta name="if:Open links in new window" content="1" />
 <meta name="if:Use high resolution photos" content="0" />
 
 <!-- [TEXT VARIABLES] -->
@@ -273,11 +276,18 @@ p a:hover, li a:hover {
       index_page    : {block:IndexPage}true{/block:IndexPage}{block:PermalinkPage}false{/block:PermalinkPage},
       tags      : {block:IfSidebarTags}"{text:Sidebar tags}"{/block:IfSidebarTags}{block:IfNotSidebarTags}false{/block:IfNotSidebarTags},
       infinite_scroll   : {block:IfEnableInfiniteScroll}true{block:IfEnableInfiniteScroll}{block:IfNotEnableInfiniteScroll}false{block:IfNotEnableInfiniteScroll},
+      group_additional    : {block:IfGroupAdditionalPagesTogether}true{block:IfGroupAdditionalPagesTogether}{block:IfNotGroupAdditionalPagesTogether}false{block:IfNotGroupAdditionalPagesTogether},
+      new_window    : {block:IfOpenLinksInNewWindow}true{block:IfOpenLinksInNewWindow}{block:IfNotOpenLinksInNewWindow}false{block:IfNotOpenLinksInNewWindow},
       background_color  : '{BackgroundColor}',
       text_color    : '{color:Text}',
       accent_color    : '{AccentColor}'
     }
   </script>
   <script type="text/javascript" src="http://static.tumblr.com/ml2qywd/R5fnjvhtb/issue.js"></script>
+    <script type="text/javascript">
+        if(Issue.new_window) {
+            jQuery('a.reblog_button, a.note_count, .date a, .source a, .post_meta a').attr('target','_blank');
+        }
+    </script>
 </body>
 </html>
