@@ -5,5 +5,5 @@ It uses up more screen real-estate than most grid layout themes and has great cu
 
 I just found a couple of areas that could be improved upon:
 
-- [X] support images with height: auto (don't limit to 600px)
-- [ ] add page numbers to infinite scrolled pages
+- The theme limits image posts heights to 600px width a set 400px width. This squishes any images that turn out taller than 600px when their width is set to 400px. It would be better to support images with height: auto up to any size (not limit it to 600px).
+- In my opinion, infinite-scrolling is a big plus for image blogs. The drawback is that if the user reloads the page, they will lose their place. It would be better if the infinite-scrolling tracked the page number so that the user could keep their place.
