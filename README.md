@@ -1,5 +1,5 @@
 # issue-rework
-Love the *Issue* Tumblr theme! 
+Love the [*Issue* Tumblr theme](https://www.tumblr.com/theme/38861)!
 
 It uses up more screen real-estate than most grid layout themes and has great customization options built-in. Really perfect for minimalist image grids. 
 
