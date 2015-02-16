@@ -81,4 +81,8 @@ $(function() {
   }
 
   preparePosts('.post');
+
+  if(Issue.new_window) {
+    $('a.reblog_button, a.note_count, .date a, .source a, .post_meta a').attr('target','_blank');
+  }
 });
