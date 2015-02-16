@@ -1,6 +1,5 @@
 # issue-rework
-Additions & fixes to the tumblr "Issue" theme.
+Love the *Issue* theme! It uses up more screen real-estate than most grid layout themes and has great customization options built-in. Really perfect for minimalist image grids. I found a couple issues that could be improved on:
 
-Fixes // features:
 - [X] support images with height: auto (don't limit to 600px)
 - [ ] add page numbers to infinite scrolled pages
